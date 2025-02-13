@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 25px 10%;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.171);
+}
+
+.back_image{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+footer {
+    padding: 50px 10%;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0.171);
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.foot ul li {
+    display: inline-block;
+    list-style: none;
+    flex-direction: column;
+    margin: 10px 15px;
+}
+
+.foot ul li a{
+    text-decoration: none;
+    color: #808080;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 45px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #8a2be2, #6a0dad);
+
+    font-size: 16px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1{
+    font-size: 70px;
+    color: #ffffff;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.content p{
+    margin: 10px 0 30px;
+    color: #b8b8b8;
+    animation-delay: 0.5s;
+}
+
+.content2{
+    background-color: #2e2e2e2c;
+    border-radius: 20pt;
+}
+
+.content2 h2{
+    margin-top: 30%;
+    max-width: 1500px;
+    font-size: 70px;
+    color: #ffffff;
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-optical-sizing: auto;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.content2 p{
+    text-align: center;
+    color: #b8b8b8;
+    animation-delay: 0.5s;
+}
+
+.copyright p {
+    color: #808080;
+}
+
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.features-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+    bottom: 50%;
+    right: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+@media (max-width: 1475px) {
+    .features-img {
+        display: none;
+    }
+}
+
+.features-img.anim{
+    animation-delay: 1.5s;
+}
+
+.video-container.anim {
+    animation-delay: 1.5s;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgba(128, 128, 128, 0.11);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container::-webkit-media-controls {
+    display: none;
+}
+
+.text-free {
+    background: linear-gradient(45deg, #8a2be2, #6a0dad);
+    padding: 15px;
+    border-radius: 8px;
+    color: rgb(32, 32, 32) !important;
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
